@@ -1,0 +1,207 @@
+:root{
+    --principal: #fff159;
+    --ofertas: #3682fd;
+    --valor: #3ca969;
+    --valor-parsec: #4db68a;
+    --textos: #383838;
+}
+
+/* ---------------------BARA DE PESQUISA-------------------- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    background-color: var(--principal)
+}
+
+/* ---------------------H CIMA-------------------- */
+
+#header .hcima img{
+    width: 120px;
+
+
+}
+
+.hcima{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--textos)
+}
+
+hr{
+    border: solid black 1px;
+
+}
+
+
+/* ---------------------BARA DE PESQUISA-------------------- */
+.container-input {
+    position: relative;
+  }
+  
+  .input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+  }
+  
+  .container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .input:focus {
+    opacity: 1;
+    width: 250px;
+  }
+  
+  /* ---------------------H BAIXO-------------------- */
+
+
+.hbaixo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 20px;
+}
+
+/*--------------- MAIN SECTION CIMA---------------- */
+
+.scima i, .scima p{
+    color: var(--valor);
+}
+
+.oferta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.scima{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+
+.oferta div{
+    border: solid black 5px;
+    padding: 5px;
+    border-radius: 20px 1px;
+}
+
+.oferta h4{
+    background-color: var(--ofertas);
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.oferta h5{
+    font-size: 20px;
+}
+
+/*-------------------- MAIN SECTION MEIO------------------ */
+
+.ofertasdia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    gap: 40px;    
+}
+
+.smeio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    padding: 20px;
+}
+
+.smeio h2{
+    margin-bottom: 30px;
+}
+
+/* -----------------------MAIN SECTION BAIXO-------------------- */
+
+.sbaixo i, .sbaixo p{
+    color: var(--valor);
+}
+
+.promocao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+
+.promocao div{
+    border: solid black 5px;
+    padding: 5px;
+    border-radius: 20px 1px;
+}
+
+.promocao h4{
+    background-color: var(--ofertas);
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.promocao h5{
+    font-size: 20px;
+}
+
+.sbaixo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.sbaixo img{
+    width: 180px;
+}
+
+/* ------------FOLTER----------- */
+
+.textdireita{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+}
+
+
+footer{
+    background-color: var(--principal);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    background-image: url(../img/img/rodape.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
