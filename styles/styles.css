@@ -387,9 +387,14 @@ html{
 
 
 .oferta div{
-    border: solid black 5px;
+    border: solid black 1px;
     padding: 5px;
     border-radius: 20px 1px;
+}
+
+.oferta div:hover{
+  box-shadow: 4px  4px 4px 4px rgba(0,0,0,0.25);
+  transition: all 0.5s;
 }
 
 .oferta h4{
@@ -699,7 +704,7 @@ main #registro #registro-registrar .container{
   border-radius: 15px;
   margin: auto;
   margin-top: 60px;
-}
+  }
 
 .inputBox,
 .inputBox1 {
@@ -786,4 +791,74 @@ main #registro #registro-registrar .container{
 .enter:hover {
   background-color: var(--logo);
   color: white;
+}
+
+/* ------------------------PRODUTO--------------------------- */
+
+.descri{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 70px;
+  gap: 70px;
+  font-size: 20px;
+}
+.frit img{
+  width: 400px;
+}
+main .button-compra{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  align-items: center;
+}
+/* -------------------PARTE DE BAIXO FRITADEIRA------------- */
+
+.flex{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.flex div{
+  border: solid black 2px;
+  padding: 10px;
+  border-radius: 20px 1px;
+}
+
+.flex{
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.flex button{
+  background-color: var(--ofertas);
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+}
+
+.camera, .laptop, .cadeira{
+  padding: 25px;
+}
+
+.sugestoes p, .descri p{
+  color: green;
+}
+
+.sugestoes h7, .descri h7{
+  color: white;
+}
+
+.compra button{
+  background-color: var(--logo);
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+}
+
+.suguestoes{
+  text-align: center;
 }
