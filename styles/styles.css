@@ -17,6 +17,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 #header {
     background-color: var(--principal)
 }
@@ -449,9 +453,14 @@ html{
 
 
 .promocao div{
-    border: solid black 5px;
+    border: solid black 1px;
     padding: 5px;
     border-radius: 20px 1px;
+}
+
+.promocao div:hover{
+  box-shadow: 4px  4px 4px 4px rgba(0,0,0,0.5);
+  transition: all 0.5s;
 }
 
 .promocao h4{
@@ -811,18 +820,26 @@ main .button-compra{
   text-align: center;
   align-items: center;
 }
+
+main .button-compra input{
+  width: 50%;
+}
 /* -------------------PARTE DE BAIXO FRITADEIRA------------- */
 
 .flex{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
 }
 
 .flex div{
   border: solid black 2px;
   padding: 10px;
-  border-radius: 20px 1px;
+  border-radius: 20px ;
+}
+
+.flex .primary-button button{
+  align-items: center;
 }
 
 .flex{
@@ -847,6 +864,12 @@ main .button-compra{
   color: green;
 }
 
+.mais p,
+.menos p{
+  color: white;
+  font-size: 15px;
+}
+
 .sugestoes h7, .descri h7{
   color: white;
 }
@@ -862,3 +885,24 @@ main .button-compra{
 .suguestoes{
   text-align: center;
 }
+
+.flex div:hover{
+  box-shadow: 4px  4px 4px 4px rgba(0,0,0,0.5);
+  transition: all 0.5s;
+}
+
+/* ------------------FOOTER---------------- */
+
+footer#footerproduto{
+    background-color: var(--principal);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    background-image: url(../img/img/rodape.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+}
+
+/* -----------CARRINHO----------------- */

@@ -16,7 +16,7 @@
     <header id="header">
         <div class="hcima">
             <figure>
-                <img src="../img/img/senai.png" alt="">
+                    <img src="../img/img/senai.png" alt="">
             </figure>
             
             <div class="container-input">
@@ -65,19 +65,25 @@
                 <br>
                 <p class="cinza">Potência: 1400W</p>
                 <p class="cinza">Pesa 5.5kg.</p>
-                <p class="cinza">Ideal para preparar suas refeições.</p>
+                <p class="cinza">Rapido aquecimento</p>
             </div>
 
             <div class="compra">
                 <p>Adicionar ao carrinho <span><i class="fa-solid fa-cart-plus"></i></span></p>
                 <br>
                 <div class="button-compra">
-                    <button type="button">
-                        <p>-</p>
+                    <button type="button" onclick="document.getElementById('num').value = parseInt(document.getElementById('num').value) - 1;">
+                        <div class="menos">
+                            <p>-</p>
+                        </div>
                     </button>
-                    <p> 1 </p>
-                    <button type="button">
-                        <p>+</p>
+                    <p>
+                        <input type="number" id="num" value="1" />
+                    </p>
+                    <button type="button" onclick="document.getElementById('num').value = parseInt(document.getElementById('num').value) + 1;">
+                        <div class="mais">
+                            <p>+</p>
+                        </div>
                     </button>
                 </div>
                 <br><br>
@@ -95,9 +101,7 @@
             <div class="flex">
                 <div class="camera">
                     <img src="../img/img/camera.png" alt="camera" class="c">
-                    <div class="button-borders">
-                        <button class="primary-button">Oferta do dia</button>
-                    </div>
+                    <button class="primary-button">Oferta do dia</button>
                     <p><b>R$300,00</b></p>
                     <p class="verclaro">10x de R$30,00 sem juros</p>
                     <p class="verescuro">Frete grátis <span><i class="fa-solid fa-bolt"></i></span></p>
@@ -105,9 +109,7 @@
                 </div>
                 <div class="laptop">
                     <img src="../img/img/laptop.png" alt="laptop" class="l">
-                    <div class="button-borders">
-                        <button class="primary-button">Oferta do dia</button>
-                    </div>
+                    <button class="primary-button">Oferta do dia</button>
                     <p><b>R$1900,00</b></p>
                     <p class="verclaro">10x de R$190,00 sem juros</p>
                     <p class="verescuro">Frete grátis <span><i class="fa-solid fa-bolt"></i></span></p>
@@ -115,9 +117,7 @@
                 </div>
                 <div class="cadeira">
                     <img src="../img/img/cadeiraGamer.png" alt="cadeira" class="cg">
-                    <div class="button-borders">
-                        <button class="primary-button">Oferta do dia</button>
-                    </div>
+                    <button class="primary-button">Oferta do dia</button>
                     <p><b>R$1600,00</b></p>
                     <p class="verclaro">10x de R$160,00 sem juros</p>
                     <p class="verescuro">Frete grátis <span><i class="fa-solid fa-bolt"></i></span></p>
@@ -127,25 +127,26 @@
         </section>
         <script src="https://kit.fontawesome.com/0f05c75053.js" crossorigin="anonymous"></script>
     </main>
-    <footer>
-        <div class="footer" id="footer">
-            <div class="imgfundo">
-                <h5>Copyright <span><i class="fa-regular fa-copyright"></i></span> 1999-2022 Ebazar.com.br LTDA</h5>
-                <br><br>
-                <h5>CNPJ n.°03.007.331/0001-41 / Av. das Nações Unidas, n°3.003, Bonfim, Osasco/SP</h5>
-                <h5>CEP 06233-903- empresa do grupo SENAI Livre</h5>
-            </div>
-            <div>
-                <h5>Trabalhe conosco</h5>
-                <h5>Contato</h5>
-                <h5>Termos e condições</h5>
-            </div>
-            <div>
-                <h5>Acessibilidade</h5>
-                <h5>Como cuidamos da sua privacidade</h5>
-                <h5>Informações sobre seguros</h5>
-            </div>
+    <footer class="footer" id="footer">
+        
+        <div class="textesquerda">
+            <p>Copyright © 1999-2023 Ebazar.com.br LTDA.</p>
+            <p>CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.</p>
         </div>
+
+        <div class="textdireita">   
+            <div class="centro">
+                <p>Trabalhe conosco</p>
+                <p>Contato</p>
+                <p>Termos e condições</p>
+            </div>
+            <dvi class="direita">
+                <p>Acessibilidade</p>
+                <p>Como cuidamos da sua privacidade</p>
+                <p>Informações sobre seguro</p>
+            </dvi>
+        </div>
+    
     </footer>
 </body>
 
