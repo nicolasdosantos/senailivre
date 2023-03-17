@@ -4,9 +4,11 @@
     --valor: #3ca969;
     --valor-parsec: #4db68a;
     --textos: #383838;
+    --vermelho: #cb473c;
+    --logo: #004AAD;
 }
 
-/* ---------------------BARA DE PESQUISA-------------------- */
+/* ----------------------------BARA DE PESQUISA------------------------ */
 
 *{
     margin: 0px;
@@ -19,7 +21,7 @@
     background-color: var(--principal)
 }
 
-/* ---------------------H CIMA-------------------- */
+/* ---------------------------------H CIMA--------------------------- */
 
 #header .hcima img{
     width: 120px;
@@ -34,6 +36,10 @@
     justify-content: space-around;
 }
 
+.hcima{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
 .nav a{
     padding: 10px;
     text-decoration: none;
@@ -44,9 +50,15 @@ hr{
     border: solid black 1px;
     box-shadow: 2px 2px 2px 2px transparent;
 }
+/* -------------LINK----------- */
+
+html{
+  scroll-behavior: smooth;
+}
 
 
-/* ---------------------BARA DE PESQUISA-------------------- */
+
+/* --------------------------BARA DE PESQUISA------------------------- */
 .container-input {
     position: relative;
   }
@@ -73,7 +85,7 @@ hr{
   }
 
   
-  /* ----------------------BOTÃO--------------------- */
+  /* -------------------------------BOTÃO----------------------------- */
   button {
     padding: 6px 20px;
     border-radius: 30px;
@@ -90,21 +102,21 @@ hr{
    
    button:hover {
     letter-spacing: 3px;
-    background-color: red;
+    background-color: var(--logo);
     color: hsl(0, 0%, 100%);
-    box-shadow: red 0px 7px 29px 0px;
+    box-shadow: var(--logo) 0px 7px 29px 0px;
    }
    
    button:active {
     letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    background-color: var(--logo);
+    color: hsl(0, 0%, 1);
+    box-shadow: var(--logo) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
    }
 
-  /* ------------------BARRA MENU-------------------*/
+  /* --------------------------BARRA MENU--------------------------------*/
 
   .menu-item,
 .menu-open-button {
@@ -341,7 +353,7 @@ hr{
 }
 
 
-  /* ---------------------H BAIXO-------------------- */
+  /* ------------------------------------H BAIXO---------------------------------- */
 
 
 .hbaixo {
@@ -353,7 +365,7 @@ hr{
 
 
 
-/*--------------- MAIN SECTION CIMA---------------- */
+/*------------------------------ MAIN SECTION CIMA-------------------------------- */
 
 .scima i, .scima p{
     color: var(--valor);
@@ -396,7 +408,7 @@ hr{
     font-size: 20px;
 }
 
-/*-------------------- MAIN SECTION MEIO------------------ */
+/*-------------------------------- MAIN SECTION MEIO------------------------------- */
 
 .ofertasdia {
     display: grid;
@@ -418,7 +430,7 @@ hr{
     margin-bottom: 30px;
 }
 
-/* -----------------------MAIN SECTION BAIXO-------------------- */
+/* -----------------------------------MAIN SECTION BAIXO------------------------------ */
 
 .sbaixo i, .sbaixo p{
     color: var(--valor);
@@ -466,7 +478,7 @@ hr{
 
 }
 
-/* ------------FOLTER----------- */
+/* ---------------------------------FOLTER---------------------------------- */
 
 .textdireita{
     display: grid;
@@ -483,4 +495,295 @@ footer{
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 50%;
+}
+
+
+/* ---------------------------HEADER DE REGISTRO--------------------------- */
+
+
+
+.header2 .logo2{
+  width: 50px;
+}
+
+.header2{
+    background-color: var(--principal);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.25);
+}
+.header a{
+    padding: 10px;
+}
+
+.logo2{
+    width: 60px;
+    height: 60px;
+}
+
+
+/* -------------------------------MAIN REGISTRO--------------------------- */
+/* main#login-registro{
+  background: rgb(249,241,241);
+  background: linear-gradient(180deg, rgba(249,241,241,1) 26%, rgba(249,241,241,1) 38%, rgba(221,209,87,1) 65%, rgba(184,195,105,1) 72%, rgba(99,157,235,1) 78%, rgba(12,90,195,1) 85%);
+  height: 100vh;
+} */
+
+/* main#login-registro{
+  background: rgb(247, 245, 245);
+} */
+
+
+main #registre-se h1{
+  text-align: center;
+  color: black;
+}
+
+main #registro-registrar{
+  text-align: center;
+  padding: 20px;
+}
+
+
+main #registro{
+  justify-content: center;
+  align-items: center;
+}
+
+
+main#login-registro #caixa {
+  margin: 77px;
+  display: block;
+  padding: 10px;
+  border: 20px;
+  border: 4px solid var(--logo);
+  border-radius: 30px;
+  width: 230px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+main #registro{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+
+main #registro #registro-registrar  form input{
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+main .form-formulario-nome,.form-formulario-email,
+.form-formulario-usuario,.form-formulario-senha,.form-formulario-confirmar{
+  color: black;
+  text-align: left;
+  margin-top: 5px;
+}
+
+main #registro #registro-registrar form button{
+  padding: 9px;
+  border: none;
+  background-color: var(--logo);
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+}
+
+main #registro #registro-registrar .container{
+  margin-top: 10px;
+} 
+
+.check {
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+  cursor: pointer;
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34,50,84,0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: blue ;
+}
+
+#cbx:checked + .check svg {
+  stroke: blue;
+}
+
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+
+/* --------------------------PAGINA DE LOGIN--------------------------- */
+
+.singup {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flexs;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1.5em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 355px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #e3e3e3;
+  box-shadow: 16px 16px 32px #c8c8c8,
+        -16px -16px 32px #fefefe;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.inputBox,
+.inputBox1 {
+  position: relative;
+  width: 250px;
+}
+
+.inputBox input,
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+  transform: translateX(113px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: var(--logo);
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+  transform: translateX(156px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: var(--logo);
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+  border: 2px solid var(--logo);
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+
+.enter:hover {
+  background-color: var(--logo);
+  color: white;
 }
