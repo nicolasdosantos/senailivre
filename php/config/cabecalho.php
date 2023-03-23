@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>login</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="hcima">
             <figure>
                 <a href="../front/index.html">
-                <img src="../img/img/senai.png" alt="">
+                <img src="../img/senai.png" alt="">
                 </a>
             </figure>
             
@@ -24,9 +24,9 @@
             </div>  
             
             <nav class="nav">  
-                <button><a href="../front/index.html">Voltar</a></button>
-                <button><a href="../php/usuario/telaLogin.php">Entrar</a></button>
-                <button><a href="../front/registro.html">Criar conta</a></button>
+                <button><a href="../../front/index.html">Voltar</a></button>
+                <button><a href="../usuario/telaLogin.php">Entrar</a></button>
+                <button><a href="../usuario/telaRegistro.php">Criar conta</a></button>
             </nav>
 
             <nav class="menu">
@@ -39,30 +39,3 @@
              </nav>
         </div>
     </header>
-
-    <main>
-        <div class="login">
-            <div class="card">
-                <a class="singup">Login</a>
-                <div class="inputBox1">
-                    <input type="text" required="required">
-                    <span class="user">Email</span>
-                </div>
-        
-                <div class="inputBox">
-                    <input type="text" required="required">
-                    <span>Username</span>
-                </div>
-        
-                <div class="inputBox">
-                    <input type="password" required="required">
-                    <span>Password</span>
-                </div>
-        
-                <button class="enter">Enter</button>
-        
-            </div>
-        </div>
-    </main>
-</body>
-</html>
