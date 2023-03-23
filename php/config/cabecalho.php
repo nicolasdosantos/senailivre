@@ -11,7 +11,7 @@
     <header id="header">
         <div class="hcima">
             <figure>
-                <a href="../front/index.html">
+                <a href="../../front/index.html">
                 <img src="../img/senai.png" alt="">
                 </a>
             </figure>

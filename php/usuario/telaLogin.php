@@ -3,8 +3,8 @@
 ?>
 
 <main>
-    <form action="" method="POST">
-            <div class="login">
+    <form class="form" method="POST">
+        <div class="login">
             <div class="card">
                 <a class="singup">Login</a>
                 <div class="inputBox1">
@@ -31,7 +31,7 @@
         
             </div>
         </div>
-    </form>
+    <form>
 </main>
 
 <?php
