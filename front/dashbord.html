@@ -4,50 +4,254 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/dash.css">
     <title>Dashbord</title>
 </head>
 <body>
-    <main>
-            <div class="div-esquerda">
-                <figure>
-                    <img src="../img/SENAI_São_Paulo_logo 1.png" alt="">
-                </figure>
-                <div>
-                    <a href=""><span><i class="fa-solid fa-grid-2"></i></span>Painel de controle</a>
-                </div>
-                <div>
-                    <a href=""><i class="fa-solid fa-address-book"></i><span>Usuario</span></a>
-                </div>
-                <div>
-                    <a href=""><i class="fa-solid fa-circle-user"></i>Minha conta</a>
-                </div>
-                <div>
-                    <a href=""><i class="fa-solid fa-lock"></i>Segurança</a>
-                </div>
-                <div>
-                    <a href=""><i class="fa-solid fa-file-circle-check"></i>Corporativo</a>
-                </div>
-                <div>
-                    <a href=""><i class="fa-solid fa-volleyball"></i>Esporte</a>
-                </div>
-                <div>
-                    <a href=""><i class="fa-solid fa-building-columns"></i>Acadêmico</a>
-                </div>
+    <div class="div-pai">
+        <!-- ----------------------PARTE ESQUERDA------------------------------->
+        <div class="esquerda">
+            <div class="logo">
+                <img src="../img/SENAI_São_Paulo_logo 1.png" alt="Logo Senai">
             </div>
-            <div class="div-direita">
-                <header>
-                <nav>
-                    <button><a href="">DashBoard</a></button>
-                    <button><a href="">Páginas</a></button>
-                    <button><a href="">Aplicativos</a></button>
-                    <button><a href="">Ajuda</a></button>
-                </nav>
-                </header>
+            <div class="icon-esquerda">
+                <a href=""><i class="fa-solid fa-chart-simple"></i> Painel de controle</a>
+                <a href=""><i class="fa-solid fa-address-book"></i> Usuários</a>
+                <a href=""><i class="fa-solid fa-user"></i>Minha conta</a>
+                <a href=""><i class="fa-solid fa-shield-halved"></i> Segurança</a>
+                <a href=""><i class="fa-solid fa-file"></i> Corporativo</a>
+                <a href=""><i class="fa-solid fa-volleyball"></i> Esportes</a>
+                <a href=""><i class="fa-solid fa-graduation-cap"></i> Acadêmico</a>
+                <a href=""><i class="fa-solid fa-chart-pie"></i> Relatórios</a>
+                <a href=""><i class="fa-solid fa-fill-drip"></i> Customização</a>
+                <a href=""><i class="fa-sharp fa-solid fa-bell"></i> Alertas</a>
             </div>
-
         </div>
-    </main>
+        <!---------------------------PARTE DIREITA---------------------------- -->
+        <div class="direita">
+            <header class="header">
+                <nav>
+                    <button class="btn"><a href="">Dashboards</a></button>
+                    <button class="btn"><a href="">Páginas</a></button>
+                    <button class="btn"><a href="">Aplicativos</a></button>
+                    <button class="btn"><a href="">Ajuda</a></button>
+                </nav>
+                <div class="container-input">
+                    <input type="text" placeholder="Search" name="text" class="input">
+                    <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                  </svg>
+                  </div>
+                  
+                  
+            </header>
+
+        <!-- -----------------------------PARTE MEIO ------------------------ -->        
+            <div class="main">
+                <div class="controle">
+                    <div class="textos">
+                        <h4>E-commerce | Painel de Controle</h4>
+                        <p>Home -</p>
+                    </div>
+                    <!-- -------DIV 4--------- -->
+                    <div class="controlegrid">
+                        <div class="frame1 vendas">
+                            <div class="ftexto">
+                                <h4>R$</h4>
+                                <h3>69.420,00</h3>
+                                <p>Vendas esse mês</p>
+                            </div>
+                            <div class="ficon">
+                                <i class="fa-solid fa-coins"></i>    
+                            </div>
+                        </div>
+                        <div class="frame1 resto">
+                            <div class="ftexto">
+                                <h3>345</h3>
+                                <p>Produtos ativos</p>
+                            </div>
+                            <div class="ficon">
+                                <i class="fa-solid fa-box"></i>
+                            </div>
+                        </div>
+                        <div class="frame1 resto">
+                            <div class="ftexto">
+                                <h3>25</h3>
+                                <p>Fornecedores</p>
+                            </div>
+                            <div class="ficon">
+                                <i class="fa-regular fa-building"></i>
+                            </div>
+                        </div>
+                        <div class="frame1 resto">
+                            <div class="ftexto">
+                                <h3>4500</h3>
+                                <p>Clientes</p>
+                            </div>
+                            <div class="ficon">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------DIV MEIO----------- -->
+                <div class="bigbox1">
+                    <!-- ----- MEIO ESQUERDA -->
+                    <div class="ativos">
+                        <div class="titulo">
+                            <h4>Carrinhos ativos</h4>
+                        </div>
+                        <div class="atvicons">
+                            <div class="icon moda">
+                                <img src="../img/img/Group.png" alt="">
+                                <p>Moda</p>
+                            </div>
+                            <div class="icon">
+                                <img src="../img/Group (1).png" alt="">
+                                <p>Jogos</p>
+                            </div>
+                            <div class="icon">
+                                <img src="../img/watch.svg.png" alt="">
+                                <p>Eletronicos</p>
+                            </div>
+                            <div class="icon">
+                                <img src="../img/Group (2).png" alt="">
+                                <p>Esportes</p>
+                            </div>
+                            <div class="icon">
+                                <img src="../img/shoes.svg.png" alt="">
+                                <p>Tênis</p>
+                            </div>
+                        </div>
+                        <div class="tabeladiv">
+                            <table class="tabela1">
+                                <tr>
+                                    <th>FOTO</th>
+                                    <th>ITEM</th>
+                                    <th>QTY</th>
+                                    <th>PREÇO</th>
+                                    <th>VALOR TOTAL</th>
+                                </tr>
+                                <tr>
+                                    <td class="img"><img src="../img/camisaazul.png" alt=""></td>
+                                    <td class="desc"><h4>Elephant 1802</h4><p>Item: #XDG-2347</p></td>
+                                    <td class="qty">x1</td>
+                                    <td class="preco">$72.00</td>
+                                    <td class="total">$126.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="img"><img src="../img/camisavermelha.png" alt=""></td>
+                                    <td class="desc"><h4>Red Laga</h4><p>Item: #XDG-1321</p></td>
+                                    <td class="qty">x2</td>
+                                    <td class="preco">$45.00</td>
+                                    <td class="total">$126.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="img"><img src="../img/camisapreta.png" alt=""></td>
+                                    <td class="desc"><h4>RiseUP</h4><p>Item: #XDG-1321</p></td>
+                                    <td class="qty">x3</td>
+                                    <td class="preco">$84.00</td>
+                                    <td class="total">$126.00</td>  
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ----- MEIO DIREITA -->
+                    <div class="novidades">
+                        <div class="novtexto">
+                            <p>Novo aplicativo de <br><strong>E-Commerce</strong></p>
+                            <img src="../img/img/carinha.png" alt="">
+                        </div>
+                        <div class="novbotao">
+                            <button class="btnazul">Ver novidades</button>
+                            <button class="btn2">Ver produtos</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------DIV BAIXO--------- -->
+                <div class="bigbox2">
+                    <!-- ----- MEIO ESQUERDA -->
+                    <div class="tabela-esquerda">
+                        <div class="pedidos-texto">
+                            <div>
+                                <h5>Pedido</h5>
+                                <p>No último mês</p>
+                            </div>
+                            <button>Mais Detalhes</button>
+                        </div>
+    
+                        <div class="blocos">
+                            
+                            <div class="bloco">
+                                <div class="b-cima">
+                                    <div>
+                                        <img src="../img/elefante.png" alt="">
+                                        <p>Elephant 1802</p>
+                                    </div>
+                                    <button>...</button>
+                                </div> 
+                                <div class="b-baixo">
+                                    <p>To:  Jason Bourne</p>                  
+                                    <p>Pago</p>
+                                </div>
+                            </div>
+                            <div class="bloco">
+                                <div class="b-cima">
+                                    <div>
+                                        <img src="../img/camisapreta2.png" alt="">
+                                        <p>RiseUP</p>
+                                    </div>
+                                    <button>...</button>
+                                </div> 
+                                <div class="b-baixo">
+                                    <p>To:  Marie Durant</p>                  
+                                    <p>Processando</p>
+                                </div>
+                            </div>
+    
+                            <div class="bloco">
+                                <div class="b-cima">
+                                    <div>
+                                        <img src="../img/camisaamarela.png" alt="">
+                                        <p>Yellow Stone</p>
+                                    </div>
+                                    <button>...</button>
+                                </div> 
+                                <div class="b-baixo">
+                                    <p>To:  Dan Wilson</p>                  
+                                    <p>Cancelado</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="bloco">
+                                <div class="b-cima">
+                                    <div>
+                                        <img src="../img/camisavermalha.png" alt="">
+                                        <p>Elephant 1802</p>
+                                    </div>
+                                    <button>...</button>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- ----- MEIO DIREITA -->
+                    <div class="vendas2">
+                        <div class="novtexto">
+                            <p>Novo aplicativo de <br><strong>E-Commerce</strong></p>
+                            <img src="../img/img/carinha.png" alt="">
+                        </div>
+                        <div class="novbotao">
+                            <button class="btnazul">Ver novidades</button>
+                            <button class="btn2">Ver produtos</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+                
 </body>
 <script src="https://kit.fontawesome.com/92963c3af3.js" crossorigin="anonymous"></script>
 </html>
